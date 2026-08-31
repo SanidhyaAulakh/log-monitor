@@ -10,4 +10,4 @@ cp ../logs/app.log ../logs/app.log.bak
 
 echo "Monitoring Completed"
 
-echo "feature branch edited"
+echo "Login and Alert Feature Completed"
