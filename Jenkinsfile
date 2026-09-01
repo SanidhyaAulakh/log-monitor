@@ -30,6 +30,8 @@ pipeline {
             steps {
 
                 echo "Project: ${PROJECT_NAME}"
+		echo "Build Number: ${BUILD_NUMBER}"
+		echo "Job Name: ${JOB_NAME}"
 
                 sh 'pwd'
                 sh 'ls -la'
