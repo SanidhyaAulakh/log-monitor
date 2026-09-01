@@ -42,7 +42,7 @@ pipeline {
 
             steps {
 
-                sh "grep ${LOG_LEVEL} logs/app.log"
+                sh "grep ${params.LOG_LEVEL} logs/app.log"
             }
         }
 
