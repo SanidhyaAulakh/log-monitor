@@ -46,6 +46,21 @@ pipeline {
             }
         }
 
+	stage('Credentials Test') {
+  	    steps {
+                      withCredentials([
+            		usernamePassword(
+                		credentialsId: 'github-creds',
+                		usernameVariable: 'USER',
+                		passwordVariable: 'PASS'
+            			)
+        			]) {
+            echo "Credentials Loaded Successfully"
+        	}
+    	    }
+	}
+
+
         stage('Approval') {
 
             when {
